@@ -61,6 +61,6 @@ class SubjectOffStudy(RequiresConsentFieldsModelMixin,BaseUuidModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        app_label = 'trainee_subject'
+        app_label = 'traineesubject'
         verbose_name = 'Subject off Study'
         verbose_name_plural = 'Subject Off Study'

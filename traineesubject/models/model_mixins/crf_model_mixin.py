@@ -46,7 +46,7 @@ class CrfModelMixin(BaseCrfModelMixin, SubjectScheduleCrfModelMixin,
         return self.subject_visit.natural_key()
 
     natural_key.dependencies = [
-        'trainee_subject.subjectvisit',
+        'traineesubject.subjectvisit',
         'sites.Site',
         'edc_appointment.appointment']
 

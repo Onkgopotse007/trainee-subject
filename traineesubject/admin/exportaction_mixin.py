@@ -175,7 +175,7 @@ class ExportActionMixin:
     
     
     def consent_obj(self, subject_identifier: str):
-        consent_cls = django_apps.get_model('trainee_subject.subjectconsent')
+        consent_cls = django_apps.get_model('traineesubject.subjectconsent')
         consent = consent_cls.objects.filter(subject_identifier=subject_identifier)
         
         if consent.exists():
@@ -183,11 +183,11 @@ class ExportActionMixin:
         return None
 
     def is_consent(self, obj):
-        consent_cls = django_apps.get_model('trainee_subject.subjectconsent')
+        consent_cls = django_apps.get_model('traineesubject.subjectconsent')
         return isinstance(obj, consent_cls)
 
     def is_visit(self, obj):
-        visit_cls = django_apps.get_model('trainee_subject.subjectvisit')
+        visit_cls = django_apps.get_model('traineesubject.subjectvisit')
         return isinstance(obj, visit_cls)
 
     def on_study(self, subject_identifier):

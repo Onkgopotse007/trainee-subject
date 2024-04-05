@@ -2,7 +2,7 @@ from edc_constants.constants import OTHER, OFF_STUDY,NO,YES
 from edc_constants.constants import NOT_APPLICABLE
 
 """
-Custom choice for trainee_subject 
+Custom choice for traineesubject 
 """
 COMMUNITY_ACTIVITY = (
     ("Very active", "Very active"),
