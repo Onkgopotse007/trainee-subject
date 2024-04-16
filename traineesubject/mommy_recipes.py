@@ -22,7 +22,7 @@ subjectscreening = Recipe(
     enrollment_interest=YES,
     citizen=YES,
     is_minor=NO,
-    enrollment_site='Otse_clinic',
+    enrollment_site='Mathangwane_clinic',
 )
 
 subjectconsent = Recipe(
@@ -39,8 +39,8 @@ subjectconsent = Recipe(
     is_dob_estimated=NO,
     citizen=YES,
     version='1',
-    identity='123421234',
-    confirm_identity='123421234',
+    identity='123411234',
+    confirm_identity='123411234',
     consent_reviewed=YES,
     assessment_score=YES,
     verbal_script=YES,

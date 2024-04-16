@@ -48,7 +48,7 @@ sys.stdout.write(style.SUCCESS(f'  * Reading config from {CONFIG_FILE}\n'))
 config = configparser.ConfigParser()
 config.read(CONFIG_PATH)
 
-#KEY_PATH = '/etc/traineeproject_subject/crypto_fields'
+#KEY_PATH = '/etc/traineeprojectsubject/crypto_fields'
 
 ALLOWED_HOSTS = []
 
