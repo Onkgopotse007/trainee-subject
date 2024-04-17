@@ -53,7 +53,10 @@ config.read(CONFIG_PATH)
 ALLOWED_HOSTS = []
 
 # EDC SMS configuration
-BASE_API_URL = config['edc_sms']['base_api_url']
+if 'edc_sms' in config:
+    BASE_API_URL = config['edc_sms'].get('base_api_url', '')
+else:
+    BASE_API_URL = ''
 
 
 
